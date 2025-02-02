@@ -1,0 +1,122 @@
+@import "@/styles/partials/config";
+
+.banner {
+  transform: translateY(0px) skewY(0deg);
+  transition: -100ms;
+  padding-block: 11.25rem 8.75rem;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+
+  .bannerBody {
+    z-index: 9999;
+    padding-inline: 7.5rem;
+
+    &::before {
+      content: "";
+      width: 30rem;
+      height: 30rem;
+      border-radius: 50%;
+      background-color: color(primary-orange);
+      position: absolute;
+      top: 0;
+      left: 0;
+      filter: blur(13rem);
+      opacity: 0.3;
+      background: linear-gradient(45deg, #a56433, #f8c084);
+    }
+
+    &::after {
+      content: "";
+      width: 30rem;
+      height: 30rem;
+      border-radius: 50%;
+      background-color: color(circle-blue);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      filter: blur(13rem);
+      opacity: 0.3;
+      background: linear-gradient(45deg, #a56433, #f8c084);
+    }
+
+    @include mobile-tablet-p {
+      padding: 5rem 1.25rem;
+
+      &::after,
+      &::before {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 0%;
+      }
+    }
+
+    @include mobile {
+      padding: 5rem spacing(mobile-padding);
+    }
+    .heading {
+      font-size: text(xxl-larger);
+      font-weight: 500;
+      margin: 0 0 3rem;
+      color: color(primary-white);
+
+      @include mobile-tablet-p {
+        font-size: text(xl-larger);
+        line-height: 90px;
+        margin: 0 0 2.188rem;
+      }
+
+      @include mobile {
+        font-size: text(larger);
+        line-height: 50px;
+      }
+    }
+
+    .gradientText {
+      font-size: 6.25rem;
+      background: linear-gradient(45deg, #a56433, #f8c084);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @include mobile-tablet-p {
+        font-size: text(xl-larger);
+        line-height: 90px;
+        margin: 0 0 2.188rem;
+      }
+
+      @include mobile {
+        font-size: text(larger);
+        line-height: 50px;
+      }
+    }
+  }
+
+  .videoWrapper {
+    margin-top: spacing(p-120);
+    @include mobile-tablet-p {
+      margin-top: 3.5rem;
+    }
+
+    video {
+      height: 100wh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+      pointer-events: none; /* Allows interaction with the video */
+    }
+  }
+}

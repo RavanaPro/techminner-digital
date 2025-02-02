@@ -1,0 +1,199 @@
+@import "@/styles/partials/config";
+
+.contactFormStyle {
+  padding: 8.75rem 7.5rem;
+
+  @include tablet {
+    padding: 5rem 3rem;
+  }
+
+  @include mobile {
+    padding: 3rem 1.25rem;
+  }
+
+  .workArea {
+    background-color: color(primary-black);
+    padding: 2.5rem;
+    border-radius: text(lg);
+
+    @include tablet {
+      padding: spacing(tablet-padding);
+    }
+
+    @include mobile {
+      padding: spacing(mobile-padding);
+    }
+
+    .workGrid {
+      display: grid;
+      grid-template-columns: 55% auto;
+      gap: 3.75rem;
+
+      @include mobile-tablet-p {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .contactUsForm {
+        .formHeading {
+          font-size: 2.75rem;
+          font-weight: 500;
+          margin-bottom: 0.75rem;
+          line-height: 3.375rem;
+          display: flex;
+          flex-direction: column;
+          color: color(primary-white);
+
+          @include mobile-tablet-p {
+            font-size: text(xxxl);
+            line-height: 2.5rem;
+            padding-right: 0;
+            margin-bottom: text(lg);
+          }
+
+          .formTechHighlight {
+            font-size: 2.75rem;
+            font-weight: 500;
+            line-height: 3.375rem;
+            color: color(primary-blue);
+            @include textGradient;
+
+            @include mobile-tablet-p {
+              padding-right: 0;
+              font-size: 2rem;
+              line-height: 2.5rem;
+            }
+          }
+        }
+
+        .formText {
+          font-size: text(lg);
+          font-weight: 400;
+          opacity: opacity(light);
+          margin-bottom: 2.5rem;
+          line-height: 1.875rem;
+          max-width: 85%;
+
+          @include mobile-tablet-p {
+            padding: 0;
+            font-size: text(normal);
+            margin-bottom: 2.5rem;
+            line-height: text(xl);
+          }
+        }
+        .captchaImg {
+          margin: 2.5rem 0 2.5rem 0;
+          max-width: 100%;
+          position: relative;
+
+          .reCaptcha div {
+            width: 100% !important;
+          }
+
+          iframe {
+            width: 100%;
+          }
+        }
+
+        .policyArea {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 4rem;
+
+          @include mobile-tablet-p {
+            flex-direction: column;
+            margin-top: 2rem;
+          }
+
+          .policyText {
+            font-size: text(xxs);
+            font-weight: 400;
+            line-height: text(lg);
+            width: 100%;
+            margin: 0;
+            color: color(primary-white);
+
+            @include mobile-tablet-p {
+              margin-bottom: text(lg);
+              max-width: 100%;
+            }
+
+            .policyHighlight {
+              font-size: text(xxs);
+              margin-left: 3px;
+              color: color(primary-white);
+
+              a {
+                color: color(info-brown);
+
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+
+          .buttonGrid {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            @include mobile {
+              flex-direction: column;
+            }
+            @include mobile-tablet-p {
+              justify-content: flex-start;
+            }
+          }
+        }
+      }
+
+      .contactImg {
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 0.75rem;
+          position: absolute;
+
+          @include mobile-tablet-p {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .contactFormArea {
+      display: grid;
+      grid-template-columns: 48% 48%;
+      gap: 2rem;
+
+      @include tablet {
+        grid-template-columns: 47% 47%;
+      }
+
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .inputSpace {
+        position: relative;
+        border: transparent;
+
+
+
+
+        &:last-child {
+          margin-bottom: 0;
+          grid-column: 1 / 3;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+$fonts: (
+  "primary": var(--font-primary),
+  "secondary": var(--font-secondary),
+);
+
+$colors: (
+  "primary-background": #f1f1f1,
+  "primary-white": #ffffff,
+  "primary-black": #000000,
+  "text-primary": #111111,
+  "input-bg": #1f1f1f,
+  "dark-bg": #1a1a1a,
+  "dark-tab": #323232,
+  "dark-icon": #191919,
+  "primary-brown": #a56433,
+  "info-brown": #ba6f37,
+  "dark-gray": #1f1f1f,
+  "bg-soft": #f1f1f1,
+  "bg-gray": #a0a0a0,
+  "error": #fc0323,
+  "border-darker": #d6d6d6,
+);
+
+$font-sizes: (
+  "xxs": 0.875rem,
+  "normal": 1rem,
+  "lg": 1.25rem,
+  "xl": 1.5rem,
+  "larger": 2.7rem,
+  "xxxl": 2rem,
+  "xl-larger": 4rem,
+  "xxl-larger": 6.25rem,
+);
+
+$opacity: (
+  "light": 0.8,
+  "dark": 0.6,
+);
