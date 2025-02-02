@@ -1,6 +1,6 @@
 @import "../../styles/partials/config";
 
-.contactFormStyle {
+.contactFormBox {
   padding: 8.75rem 7.5rem;
 
   @include tablet {
@@ -74,6 +74,7 @@
           margin-bottom: 2.5rem;
           line-height: 1.875rem;
           max-width: 85%;
+          color: color(primary-white);
 
           @include mobile-tablet-p {
             padding: 0;

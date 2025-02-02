@@ -1,14 +1,13 @@
 import { Button } from "../ui/button";
 import { ImageCustom } from "../ui/imageCustom";
 import { Input, Textarea } from "../ui/inputCustom";
-
 import Link from "next/link";
 import { cn } from "../../lib/utils";
 import styles from "./style.module.scss";
 
-const ContactUsForm = ({ contact }) => {
+const ContactUsForm = () => {
   return (
-    <section className={styles.contactFormStyle}>
+    <section className={styles.contactFormBox}>
       <div className={cn("primary-container")}>
         <div className={styles.workArea}>
           <div className={styles.workGrid}>
@@ -20,7 +19,9 @@ const ContactUsForm = ({ contact }) => {
                     with new digital ideas.
                   </span>
                 </h3>
-                <p className={styles.formText}>{contact?.Description}</p>
+                <p className={styles.formText}>
+                  Submit your project details, and we’ll get in touch soon!
+                </p>
                 <div className={styles.contactFormArea}>
                   <div className={`${styles.inputSpaceArea}`}>
                     <Input
