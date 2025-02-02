@@ -1,13 +1,13 @@
 import "bootstrap/dist/css/bootstrap.css";
-import { cn } from "../lib/utils";
-import { aeonik, helvetica } from "../lib/fonts";
-import Header from "../components/layout/header";
-import "../styles/globals.scss";
+import { cn } from "../../lib/utils";
+import { aeonik, helvetica } from "../../lib/fonts";
+import Header from "../../components/layout/header";
+import "../../styles/globals.scss";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Tech Minner | Humanizing Digital Experiences",
-  description: "Tech Minner | Humanizing Digital Experiences",
+  title: "Tech Minner | Making Technology More Human",
+  description: "Tech Minner | Making Technology More Human",
 };
 
 export default function RootLayout({ children }) {

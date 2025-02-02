@@ -1,5 +1,5 @@
-import NavigationDesktop from "../navigation/navigationDesktop";
-import NavigationMobile from "../navigation/navigationMobile";
+import NavigationDesktop from "../../layout/navigation/navigationDesktop";
+import NavigationMobile from "../../layout/navigation/navigationMobile";
 
 const Header = () => {
   return (

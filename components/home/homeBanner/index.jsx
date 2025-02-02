@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { ImageCustom } from "@/components/ui/imageCustom";
+import { Button } from "../../ui/button";
+import { ImageCustom } from "../../ui/imageCustom";
 import VideoCustom from "../../ui/videoCustom";
 import styles from "./style.module.scss";
 

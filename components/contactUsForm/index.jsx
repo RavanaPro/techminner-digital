@@ -1,22 +1,12 @@
-import { Button } from "@/components/ui/button";
-import { ImageCustom } from "@/components/ui/imageCustom";
-import { Input, Textarea } from "@/components/ui/inputCustom";
+import { Button } from "../ui/button";
+import { ImageCustom } from "../ui/imageCustom";
+import { Input, Textarea } from "../ui/inputCustom";
 
 import Link from "next/link";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 import styles from "./style.module.scss";
-import CustomDropdown from "../ui/customDropdown";
 
 const ContactUsForm = ({ contact }) => {
-
-  const options = [
-    { name: "Frontend" },
-    { name: "Backend" },
-    { name: "CMS" },
-    { name: "Animation" },
-  ];
-
-  
   return (
     <section className={styles.contactFormStyle}>
       <div className={cn("primary-container")}>
@@ -59,15 +49,6 @@ const ContactUsForm = ({ contact }) => {
                     />
                   </div>
 
-                  {/* <div className={`${styles.inputSpace}`}>
-                    <CustomDropdown
-                      placeholder="Select Purpose*"
-                      title="Select Purpose*"
-                      name="selectPurpose"
-                      options={options}
-                      className="custom-dropdown z-5"
-                    />
-                  </div> */}
                   <div className={`${styles.inputSpace}`}>
                     <Input
                       label="Purpose*"
@@ -118,7 +99,7 @@ const ContactUsForm = ({ contact }) => {
             </form>
 
             <ImageCustom
-              src="/images/contact.png"
+              src="/images/tech-contact-us.jpg"
               width={480}
               height={616}
               alt="contactImg"

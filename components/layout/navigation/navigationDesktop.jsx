@@ -1,9 +1,8 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import { ImageCustom } from "@/components/ui/imageCustom";
-import { cn } from "@/lib/utils";
+import { Button } from "../../ui/button";
+import { ImageCustom } from "../../ui/imageCustom";
+import { cn } from "../../../lib/utils";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import styles from "./style.module.scss";
 
 const NavigationDesktop = () => {
