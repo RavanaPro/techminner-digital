@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import { cn } from "../../lib/utils";
 import { aeonik, helvetica } from "../../lib/fonts";
 import Header from "../../components/layout/header";
+import Footer from "../../components/layout/footer";
 import "../../styles/globals.scss";
 import Head from "next/head";
 
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
       <body className={cn(aeonik.variable, helvetica.variable)}>
         <Header />
         <div className={cn("main-style")}>{children}</div>
+        <Footer />
       </body>
     </html>
   );

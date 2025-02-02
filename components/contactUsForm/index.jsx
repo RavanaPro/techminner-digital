@@ -22,14 +22,14 @@ const ContactUsForm = ({ contact }) => {
                 </h3>
                 <p className={styles.formText}>{contact?.Description}</p>
                 <div className={styles.contactFormArea}>
-                  <div className={`${styles.inputSpace}`}>
+                  <div className={`${styles.inputSpaceArea}`}>
                     <Input
                       label="First Name*"
                       placeholder="First Name*"
                       type="name"
                     />
                   </div>
-                  <div className={`${styles.inputSpace}`}>
+                  <div className={`${styles.inputSpaceArea}`}>
                     <Input
                       label="Last Name*"
                       placeholder="Last Name*"
@@ -37,10 +37,10 @@ const ContactUsForm = ({ contact }) => {
                     />
                   </div>
 
-                  <div className={`${styles.inputSpace}`}>
+                  <div className={`${styles.inputSpaceArea}`}>
                     <Input label="Email*" placeholder="Email*" type="email" />
                   </div>
-                  <div className={`${styles.inputSpace}`}>
+                  <div className={`${styles.inputSpaceArea}`}>
                     <Input
                       label="Phone Number*"
                       placeholder="Phone Number*"
@@ -49,7 +49,7 @@ const ContactUsForm = ({ contact }) => {
                     />
                   </div>
 
-                  <div className={`${styles.inputSpace}`}>
+                  <div className={`${styles.inputSpaceArea}`}>
                     <Input
                       label="Purpose*"
                       placeholder="Purpose*"
@@ -57,7 +57,7 @@ const ContactUsForm = ({ contact }) => {
                       name="Purpose"
                     />
                   </div>
-                  <div className={`${styles.inputSpace}`}>
+                  <div className={`${styles.inputSpaceArea}`}>
                     <Input
                       label="Company*"
                       placeholder="Company*"
@@ -65,7 +65,7 @@ const ContactUsForm = ({ contact }) => {
                       name="companyName"
                     />
                   </div>
-                  <div className={`${styles.inputSpace}`}>
+                  <div className={`${styles.inputSpaceArea}`}>
                     <Textarea
                       label="Project Explanation*"
                       placeholder="Project Explanation*"
