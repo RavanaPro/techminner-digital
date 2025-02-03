@@ -4,10 +4,22 @@ import { ImageCustom } from "../../ui/imageCustom";
 import { cn } from "../../../lib/utils";
 import Link from "next/link";
 import styles from "./style.module.scss";
+import { useState, useEffect } from "react";
 
 const NavigationDesktop = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY > 0;
+      setIsScrolled(scrolled);
+    };
 
+    window.addEventListener("scroll", handleScroll);
 
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   // function LatestTech() {
   //   return (
   //     <div className={cn(styles.latestTech)}>
@@ -96,7 +108,13 @@ const NavigationDesktop = () => {
   }
 
   return (
-    <header className={cn(styles.headerMain, styles.headerMainDesktop)}>
+    <header
+      className={cn(
+        styles.headerMain,
+        styles.headerMainDesktop,
+        isScrolled ? styles.headerDark : styles.headerLight
+      )}
+    >
       <div className={cn(styles.headerContainer, "primary-container")}>
         <div className={styles.logo}>
           <Link href="/" className={styles.lightLogo}>

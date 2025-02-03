@@ -78,8 +78,8 @@ const ContactUsForm = () => {
 
                 <div className={styles.policyArea}>
                   <p className={styles.policyText}>
-                    I understand and consent to my personal data being processed
-                    in accordance with TechMinner Privacy Policy.
+                    I acknowledge and agree to the processing of my personal
+                    data as outlined in TechMinner's Privacy Policy
                     <span className={styles.policyHighlight}>
                       <Link href="/">Privacy Policy</Link>
                     </span>
