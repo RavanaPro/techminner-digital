@@ -189,7 +189,7 @@ input:-webkit-autofill {
       z-index: 2;
       &::before {
         content: "";
-        background-image: url("../public/images/slide-icon.svg");
+        background-image: url("../public/slide-icon.svg");
         background-repeat: no-repeat;
         background-size: 1.625rem;
         position: absolute;
@@ -548,62 +548,62 @@ html.lenis {
     grid-row: 1;
   }
 
-  .slick-arrow {
-    display: flex;
-    gap: 24px;
-    margin-top: 2rem;
-    background-color: color(primary-brown);
-    padding: 0;
-    border-radius: 0.25rem;
-    width: 3rem;
-    height: 3rem;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
+  // .slick-arrow {
+  //   display: flex;
+  //   gap: 24px;
+  //   margin-top: 2rem;
+  //   background-color: color(primary-brown);
+  //   padding: 0;
+  //   border-radius: 0.25rem;
+  //   width: 3rem;
+  //   height: 3rem;
+  //   display: flex !important;
+  //   justify-content: center;
+  //   align-items: center;
 
-    &::before {
-      display: none;
-    }
+  //   &::before {
+  //     display: none;
+  //   }
 
-    &.slick-prev {
-      background-image: url("../public/images/icons/arrow-left.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+  //   &.slick-prev {
+  //     background-image: url("../public/images/icons/arrow-left.svg");
+  //     background-repeat: no-repeat;
+  //     background-position: center;
+  //   }
 
-    &.slick-next {
-      background-image: url("../public/images/icons/arrow-right.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      margin-left: -38vw;
+  //   &.slick-next {
+  //     background-image: url("../public/images/icons/arrow-right.svg");
+  //     background-repeat: no-repeat;
+  //     background-position: center;
+  //     margin-left: -38vw;
 
-      @include tablet-p {
-        margin-left: -43vw;
-      }
+  //     @include tablet-p {
+  //       margin-left: -43vw;
+  //     }
 
-      @include iphone5 {
-        margin-left: -35vw;
-      }
-    }
-  }
+  //     @include iphone5 {
+  //       margin-left: -35vw;
+  //     }
+  //   }
+  // }
 
-  .slick-disabled {
-    border-radius: 0.25rem;
-    width: 3rem;
-    height: 3rem;
-    border: 0.14rem solid rgba(color(text-primary), 0.2);
-    color: color(primary-brown);
-    background: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: not-allowed;
+  // .slick-disabled {
+  //   border-radius: 0.25rem;
+  //   width: 3rem;
+  //   height: 3rem;
+  //   border: 0.14rem solid rgba(color(text-primary), 0.2);
+  //   color: color(primary-brown);
+  //   background: none;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   cursor: not-allowed;
 
-    &.slick-next,
-    &.slick-prev {
-      filter: brightness(0) contrast(100);
-    }
-  }
+  //   &.slick-next,
+  //   &.slick-prev {
+  //     filter: brightness(0) contrast(100);
+  //   }
+  // }
 }
 
 .custom-dropdown {

@@ -1,7 +1,6 @@
 import { Button } from "../ui/button";
 import { ImageCustom } from "../ui/imageCustom";
 import { Input, Textarea } from "../ui/inputCustom";
-import Link from "next/link";
 import { cn } from "../../lib/utils";
 import styles from "./style.module.scss";
 
@@ -11,12 +10,19 @@ const ContactUsForm = () => {
       <div className={cn("primary-container")}>
         <div className={styles.workArea}>
           <div className={styles.workGrid}>
+            <ImageCustom
+              src="/tech-contact-us.svg"
+              width={480}
+              height={616}
+              alt="contactImg"
+              className={styles.contactImg}
+            />
             <form>
               <div className={styles.contactUsForm}>
                 <h3 className={styles.formHeading}>
-                  Lets's Work
+                Let’s turn your ideas
                   <span className={styles.formTechHighlight}>
-                    with new digital ideas.
+                  into reality—talk to us
                   </span>
                 </h3>
                 <p className={styles.formText}>
@@ -77,18 +83,18 @@ const ContactUsForm = () => {
                 </div>
 
                 <div className={styles.policyArea}>
-                  <p className={styles.policyText}>
+                  {/* <p className={styles.policyText}>
                     I acknowledge and agree to the processing of my personal
                     data as outlined in TechMinner's Privacy Policy
                     <span className={styles.policyHighlight}>
                       <Link href="/">Privacy Policy</Link>
                     </span>
-                  </p>
+                  </p> */}
                   <div className={`${styles.buttonGrid}`}>
                     <Button variant="brownBtn" size="md" type="submit">
                       Send Message
                       <ImageCustom
-                        src="/images/icons/arrow-right.svg"
+                        src="/arrow-right.svg"
                         width={18}
                         height={18}
                         alt="arrow"
@@ -98,14 +104,6 @@ const ContactUsForm = () => {
                 </div>
               </div>
             </form>
-
-            <ImageCustom
-              src="/images/tech-contact-us.jpg"
-              width={480}
-              height={616}
-              alt="contactImg"
-              className={styles.contactImg}
-            />
           </div>
         </div>
       </div>

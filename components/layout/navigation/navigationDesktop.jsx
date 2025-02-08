@@ -20,71 +20,13 @@ const NavigationDesktop = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  // function LatestTech() {
-  //   return (
-  //     <div className={cn(styles.latestTech)}>
-  //       <h1>Latest from technology</h1>
-  //       <Link href="/" className={styles.imageTech}>
-  //         <div className={styles.imgBox}>
-  //           <ImageCustom
-  //             src="/images/nav-img.png"
-  //             width={300}
-  //             height={300}
-  //             alt="nav-image"
-  //           />
-  //         </div>
-  //         <div className={styles.infoBox}>
-  //           <p className={styles.description}>
-  //             Learn more about the latest Drupal Updates
-  //           </p>
-  //           <ImageCustom
-  //             src="/images/icons/arrow-right.svg"
-  //             width={20}
-  //             height={20}
-  //             alt="arrow"
-  //           />
-  //         </div>
-  //       </Link>
-  //       <div className={styles.imageTech}>
-  //         <div className={styles.infoBox}>
-  //           <p className={styles.description}>
-  //             CMS has been the game changer of 2023 website trends
-  //           </p>
-  //           <ImageCustom
-  //             src="/images/icons/arrow-right.svg"
-  //             width={20}
-  //             height={20}
-  //             alt="arrow"
-  //           />
-  //         </div>
-  //       </div>
-  //       <div className={styles.innovationBannerDrop}>
-  //       <ImageCustom
-  //             src="/innovation.jpg"
-  //             width={300}
-  //             height={300}
-  //             alt="arrow"
-  //           />
-  //       </div>
-
-  //     </div>
-  //   );
-  // }
 
   function OverTech() {
     return (
       <div className={styles.overviewFlex}>
         <div className={styles.overviewSubFlex}>
-          {/* <div>
-            <ImageCustom
-              src="/technical-solutions.png"
-              width={20}
-              height={20}
-              alt="arrow"
-            />
-          </div> */}
           <div className={styles.overviewTitle}>
-            <h1>Behind the Tech</h1>
+            <h1>Behind the Technology</h1>
             <p>
               "Your partner in navigating the inevitable
               <br />
@@ -92,17 +34,6 @@ const NavigationDesktop = () => {
             </p>
           </div>
         </div>
-        {/* <div className={styles.overviewBtn}>
-          <Button variant="brownBtn" size="sm">
-            Overview{" "}
-            <ImageCustom
-              src="/images/icons/arrow-right.svg"
-              width={20}
-              height={20}
-              alt="arrow"
-            />
-          </Button>
-        </div> */}
       </div>
     );
   }
@@ -119,7 +50,7 @@ const NavigationDesktop = () => {
         <div className={styles.logo}>
           <Link href="/" className={styles.lightLogo}>
             <ImageCustom
-              src="/images/tech-minnor-logo-2-new.png"
+              src="/tech-minnor-logo-2-new.svg"
               width={200}
               height={46}
               alt="header-logo"
@@ -127,7 +58,7 @@ const NavigationDesktop = () => {
           </Link>
           <Link href="/" className={styles.darkLogo}>
             <ImageCustom
-              src="/images/tech-minnor-logo-2-new.png"
+              src="/tech-minnor-logo-2-new.svg"
               width={200}
               height={46}
               alt="dark-logo"
@@ -154,16 +85,16 @@ const NavigationDesktop = () => {
                     {OverTech()}
                     <div className={cn(styles.multiHrefs)}>
                       <div className="row">
-                        <div className="col-sm-6">
+                        <div className="col-sm-12">
                           <Link href="/" className={cn(styles.hrefInnerFlex)}>
                             <div className={styles.head}>
                               <h4 className={styles.linkTitle}>
                                 Web Development
                               </h4>
                               <ImageCustom
-                                src="/images/icons/arrow-right.svg"
-                                width={20}
-                                height={20}
+                                src="/down-arrow.svg"
+                                width={18}
+                                height={18}
                                 alt="arrow"
                               />
                             </div>
@@ -178,9 +109,9 @@ const NavigationDesktop = () => {
                                 Content Management System
                               </h4>
                               <ImageCustom
-                                src="/images/icons/arrow-right.svg"
-                                width={20}
-                                height={20}
+                                src="/down-arrow.svg"
+                                width={18}
+                                height={18}
                                 alt="arrow"
                               />
                             </div>
@@ -195,9 +126,9 @@ const NavigationDesktop = () => {
                                 Mobile Application
                               </h4>
                               <ImageCustom
-                                src="/images/icons/arrow-right.svg"
-                                width={20}
-                                height={20}
+                                src="down-arrow.svg"
+                                width={18}
+                                height={18}
                                 alt="arrow"
                               />
                             </div>
@@ -208,14 +139,14 @@ const NavigationDesktop = () => {
                           </Link>
                         </div>
 
-                        <div className="col-sm-6">
+                        <div className="col-sm-12">
                           <Link href="/" className={cn(styles.hrefInnerFlex)}>
                             <div className={styles.head}>
                               <h4 className={styles.linkTitle}>UI/UX</h4>
                               <ImageCustom
-                                src="/images/icons/arrow-right.svg"
-                                width={20}
-                                height={20}
+                                src="down-arrow.svg"
+                                width={18}
+                                height={18}
                                 alt="arrow"
                               />
                             </div>
@@ -230,9 +161,9 @@ const NavigationDesktop = () => {
                                 Custom Development
                               </h4>
                               <ImageCustom
-                                src="/images/icons/arrow-right.svg"
-                                width={20}
-                                height={20}
+                                src="down-arrow.svg"
+                                width={18}
+                                height={18}
                                 alt="arrow"
                               />
                             </div>
@@ -247,9 +178,9 @@ const NavigationDesktop = () => {
                                 Micro services
                               </h4>
                               <ImageCustom
-                                src="/images/icons/arrow-right.svg"
-                                width={20}
-                                height={20}
+                                src="down-arrow.svg"
+                                width={18}
+                                height={18}
                                 alt="arrow"
                               />
                             </div>
@@ -271,7 +202,7 @@ const NavigationDesktop = () => {
             {/* <li className={styles.dropDown}>
               <Link href="/">
                 <ImageCustom
-                  src="/images/arrow-left.svg"
+                  src="/arrow-left.svg"
                   width={20}
                   height={20}
                   alt="arrow"
@@ -293,7 +224,7 @@ const NavigationDesktop = () => {
                             <div className={styles.head}>
                               <h4 className={styles.linkTitle}>Careers</h4>
                               <ImageCustom
-                                src="/images/arrow-left.svg"
+                                src="/arrow-left.svg"
                                 width={20}
                                 height={20}
                                 alt="arrow"
@@ -308,7 +239,7 @@ const NavigationDesktop = () => {
                             <div className={styles.head}>
                               <h4 className={styles.linkTitle}>Insights</h4>
                               <ImageCustom
-                                src="/images/arrow-left.svg"
+                                src="/arrow-left.svg"
                                 width={20}
                                 height={20}
                                 alt="arrow"
@@ -328,7 +259,7 @@ const NavigationDesktop = () => {
                                 Centre of Excellence
                               </h4>
                               <ImageCustom
-                                src="/images/arrow-left.svg"
+                                src="/arrow-left.svg"
                                 width={20}
                                 height={20}
                                 alt="arrow"
@@ -346,7 +277,7 @@ const NavigationDesktop = () => {
                             <div className={styles.head}>
                               <h4 className={styles.linkTitle}>Accelerators</h4>
                               <ImageCustom
-                                src="/images/arrow-left.svg"
+                                src="/arrow-left.svg"
                                 width={20}
                                 height={20}
                                 alt="arrow"
@@ -361,7 +292,7 @@ const NavigationDesktop = () => {
                             <div className={styles.head}>
                               <h4 className={styles.linkTitle}>Contact us</h4>
                               <ImageCustom
-                                src="/images/arrow-left.svg"
+                                src="/arrow-left.svg"
                                 width={20}
                                 height={20}
                                 alt="arrow"
@@ -382,9 +313,15 @@ const NavigationDesktop = () => {
           </ul>
         </nav>
         <div className={styles.headerRight}>
-          <Button variant="brownBtn" className={styles.headerBtn} size="sm">
-            Connect with us
-          </Button>
+        <Link href="/" className={styles.headerBtn}>
+            <ImageCustom
+              src="/phone-call.svg"
+              width={19}
+              height={19}
+              alt="contact"
+            />
+            Contact Us
+          </Link>
         </div>
       </div>
     </header>

@@ -402,9 +402,16 @@
       }
     }
     .headerBtn {
+      display: flex;
+      align-items: center;
+      gap: .625rem;
+      color: color(info-brown);
+      font-weight: 500;
       @include tablet {
         display: none;
       }
+
+     
     }
   }
 
@@ -626,7 +633,7 @@
       }
       .overviewTech {
         width: 100%;
-        max-width: 70%;
+        max-width: 50%;
         background-color: color(text-primary);
         padding: 3rem;
         min-height: 75vh;
@@ -719,7 +726,7 @@
           cursor: pointer;
           display: flex;
           justify-content: space-between;
-          align-items: center;
+          align-items: start;
           justify-content: flex-start;
           flex-direction: column;
           width: 100%;

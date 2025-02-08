@@ -51,7 +51,7 @@ const NavigationMobile = () => {
         <Link href="/technology" className={styles.imageTech}>
           <div className={styles.imgBox}>
             <ImageCustom
-              src="/images/img/nav-img.png"
+              src="/nav-img.png"
               width={300}
               height={300}
               alt="nav-image"
@@ -62,7 +62,7 @@ const NavigationMobile = () => {
               Learn more about the latest Drupal Updates
             </p>
             <ImageCustom
-              src="/images/arrow-left.svg"
+              src="/arrow-left.svg"
               width={20}
               height={20}
               alt="arrow"
@@ -75,7 +75,7 @@ const NavigationMobile = () => {
               CMS has been the game changer of 2023 website trends
             </p>
             <ImageCustom
-              src="/images/arrow-left.svg"
+              src="/arrow-left.svg"
               width={20}
               height={20}
               alt="arrow"
@@ -92,7 +92,7 @@ const NavigationMobile = () => {
         <div className={styles.overviewSubFlex}>
           <div>
             <ImageCustom
-              src="/images/arrow-left.svg"
+              src="/arrow-left.svg"
               width={20}
               height={20}
               alt="arrow"
@@ -112,7 +112,7 @@ const NavigationMobile = () => {
             <Button variant="outline" size="sm">
               Overview{" "}
               <ImageCustom
-                src="/images/arrow-left.svg"
+                src="/arrow-left.svg"
                 width={20}
                 height={20}
                 alt="arrow"
@@ -130,7 +130,7 @@ const NavigationMobile = () => {
         <div className={styles.logo}>
           <Link href="/" className={styles.lightLogo}>
             <ImageCustom
-              src="/images/tech-minnor-logo-2-new.png"
+              src="/tech-minnor-logo-2-new.svg"
               width={175}
               height={40}
               alt="header-logo"
@@ -138,7 +138,7 @@ const NavigationMobile = () => {
           </Link>
           <Link href="/" className={styles.darkLogo}>
             <ImageCustom
-              src="/images/tech-minnor-logo-2-new.png"
+              src="/tech-minnor-logo-2-new.svg"
               width={175}
               height={40}
               alt="dark-logo"
@@ -174,7 +174,7 @@ const NavigationMobile = () => {
                       onClick={() => setTechMenu(false)}
                     >
                       <ImageCustom
-                        src="/images/arrow-left.svg"
+                        src="/arrow-left.svg"
                         width={20}
                         height={20}
                         alt="arrow"
@@ -194,7 +194,7 @@ const NavigationMobile = () => {
                               <div className={styles.head}>
                                 <h4 className={styles.linkTitle}>CMS</h4>
                                 <ImageCustom
-                                  src="/images/arrow-left.svg"
+                                  src="/arrow-left.svg"
                                   width={20}
                                   height={20}
                                   alt="arrow"
@@ -209,7 +209,7 @@ const NavigationMobile = () => {
                               <div className={styles.head}>
                                 <h4 className={styles.linkTitle}>Commerce</h4>
                                 <ImageCustom
-                                  src="/images/arrow-left.svg"
+                                  src="/arrow-left.svg"
                                   width={20}
                                   height={20}
                                   alt="arrow"
@@ -226,7 +226,7 @@ const NavigationMobile = () => {
                                   Microservices
                                 </h4>
                                 <ImageCustom
-                                  src="/images/arrow-left.svg"
+                                  src="/arrow-left.svg"
                                   width={20}
                                   height={20}
                                   alt="arrow"
@@ -243,7 +243,7 @@ const NavigationMobile = () => {
                                   Cloud & DevSecOps
                                 </h4>
                                 <ImageCustom
-                                  src="/images/arrow-left.svg"
+                                  src="/arrow-left.svg"
                                   width={20}
                                   height={20}
                                   alt="arrow"
@@ -263,7 +263,7 @@ const NavigationMobile = () => {
                                   Data Intelligence
                                 </h4>
                                 <ImageCustom
-                                  src="/images/arrow-left.svg"
+                                  src="/arrow-left.svg"
                                   width={20}
                                   height={20}
                                   alt="arrow"
@@ -280,7 +280,7 @@ const NavigationMobile = () => {
                                   Custom Development
                                 </h4>
                                 <ImageCustom
-                                  src="/images/arrow-left.svg"
+                                  src="/arrow-left.svg"
                                   width={20}
                                   height={20}
                                   alt="arrow"
@@ -297,7 +297,7 @@ const NavigationMobile = () => {
                                   Analytics Automation
                                 </h4>
                                 <ImageCustom
-                                  src="/images/arrow-left.svg"
+                                  src="/arrow-left.svg"
                                   width={20}
                                   height={20}
                                   alt="arrow"
@@ -329,7 +329,7 @@ const NavigationMobile = () => {
                 onClick={() => setMoreMenu(true)}
               >
                 <ImageCustom
-                  src="/images/arrow-left.svg"
+                  src="/arrow-left.svg"
                   width={20}
                   height={20}
                   alt="arrow"
@@ -346,7 +346,7 @@ const NavigationMobile = () => {
                       onClick={() => setMoreMenu(false)}
                     >
                       <ImageCustom
-                        src="/images/arrow-left.svg"
+                        src="/arrow-left.svg"
                         width={20}
                         height={20}
                         alt="arrow"
@@ -366,7 +366,7 @@ const NavigationMobile = () => {
                               <div className={styles.head}>
                                 <h4 className={styles.linkTitle}>Careers</h4>
                                 <ImageCustom
-                                  src="/images/arrow-left.svg"
+                                  src="/arrow-left.svg"
                                   width={20}
                                   height={20}
                                   alt="arrow"
@@ -385,7 +385,7 @@ const NavigationMobile = () => {
                               <div className={styles.head}>
                                 <h4 className={styles.linkTitle}>Insights</h4>
                                 <ImageCustom
-                                  src="/images/arrow-left.svg"
+                                  src="/arrow-left.svg"
                                   width={20}
                                   height={20}
                                   alt="arrow"
@@ -406,7 +406,7 @@ const NavigationMobile = () => {
                                   Centre of Excellence
                                 </h4>
                                 <ImageCustom
-                                  src="/images/arrow-left.svg"
+                                  src="/arrow-left.svg"
                                   width={20}
                                   height={20}
                                   alt="arrow"
@@ -427,7 +427,7 @@ const NavigationMobile = () => {
                                   Accelerators
                                 </h4>
                                 <ImageCustom
-                                  src="/images/arrow-left.svg"
+                                  src="/arrow-left.svg"
                                   width={20}
                                   height={20}
                                   alt="arrow"
@@ -446,7 +446,7 @@ const NavigationMobile = () => {
                               <div className={styles.head}>
                                 <h4 className={styles.linkTitle}>Contact us</h4>
                                 <ImageCustom
-                                  src="/images/arrow-left.svg"
+                                  src="/arrow-left.svg"
                                   width={20}
                                   height={20}
                                   alt="arrow"
@@ -477,14 +477,14 @@ const NavigationMobile = () => {
           {/* <div className={styles.modeBtn}>
             <button variant="default">
               <ImageCustom
-                src="/images/arrow-left.svg"
+                src="/arrow-left.svg"
                 width={20}
                 height={20}
                 alt="arrow"
               />
 
               <ImageCustom
-                src="/images/arrow-left.svg"
+                src="/arrow-left.svg"
                 width={20}
                 height={20}
                 alt="arrow"

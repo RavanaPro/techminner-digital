@@ -13,7 +13,7 @@
 
   .workArea {
     background-color: color(primary-black);
-    padding: 2.5rem;
+   
     border-radius: text(lg);
 
     @include tablet {
@@ -26,7 +26,7 @@
 
     .workGrid {
       display: grid;
-      grid-template-columns: 55% auto;
+      grid-template-columns: auto 55% ;
       gap: 3.75rem;
 
       @include mobile-tablet-p {
@@ -36,6 +36,7 @@
       }
 
       .contactUsForm {
+        padding: 2.5rem;
         .formHeading {
           font-size: 2.75rem;
           font-weight: 500;

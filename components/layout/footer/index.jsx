@@ -13,7 +13,7 @@ const Footer = () => {
       <div className={cn("primary-container")}>
         <div className={styles.logo}>
           <ImageCustom
-            src="/images/tech-minnor-logo-2-new.png"
+            src="/tech-minnor-logo-2-new.svg"
             width={153}
             height={40}
             alt="footer-logo"

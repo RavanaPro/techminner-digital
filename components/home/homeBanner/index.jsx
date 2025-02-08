@@ -9,18 +9,18 @@ const HomeBanner = () => {
     <section className={styles.banner}>
       <div className={styles.bannerBody}>
         <h1 className={styles.heading}>
-          Humanizing
+          Designing
           <br />
-          Digital Journeys
+          Human Centered
           <br />
-          with <span className={styles.gradientText}>Empathy</span>
+          <span className={styles.gradientText}> Digital Experiences</span>
         </h1>
 
         <Link href="/">
           <Button variant="brownBtn" size="md">
             Let's Build Together
             <ImageCustom
-              src="/images/icons/arrow-right.svg"
+              src="/arrow-right.svg"
               width={19}
               height={19}
               alt="arrow"
