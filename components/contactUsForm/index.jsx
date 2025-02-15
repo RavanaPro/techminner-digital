@@ -1,6 +1,6 @@
 import { Button } from "../ui/button";
 import { ImageCustom } from "../ui/imageCustom";
-import { Input, Textarea } from "../ui/inputCustom";
+import { Error, Input, Textarea } from "../ui/inputCustom";
 import { cn } from "../../lib/utils";
 import styles from "./style.module.scss";
 
@@ -20,9 +20,9 @@ const ContactUsForm = () => {
             <form>
               <div className={styles.contactUsForm}>
                 <h3 className={styles.formHeading}>
-                Let’s turn your ideas
+                  Let’s turn your ideas
                   <span className={styles.formTechHighlight}>
-                  into reality—talk to us
+                    into reality—talk to us
                   </span>
                 </h3>
                 <p className={styles.formText}>
@@ -35,6 +35,7 @@ const ContactUsForm = () => {
                       placeholder="First Name*"
                       type="name"
                     />
+                    <Error>Please Enter First Name</Error>
                   </div>
                   <div className={`${styles.inputSpaceArea}`}>
                     <Input
@@ -42,10 +43,12 @@ const ContactUsForm = () => {
                       placeholder="Last Name*"
                       type="name"
                     />
+                    <Error>Please Enter Last Name</Error>
                   </div>
 
                   <div className={`${styles.inputSpaceArea}`}>
                     <Input label="Email*" placeholder="Email*" type="email" />
+                    <Error>Please Enter Email</Error>
                   </div>
                   <div className={`${styles.inputSpaceArea}`}>
                     <Input
@@ -54,6 +57,7 @@ const ContactUsForm = () => {
                       type="text"
                       name="phoneNumber*"
                     />
+                    <Error>Please Phone Number</Error>
                   </div>
 
                   <div className={`${styles.inputSpaceArea}`}>
@@ -63,6 +67,7 @@ const ContactUsForm = () => {
                       type="text"
                       name="Purpose"
                     />
+                    <Error>Please Enter Your's Enquiry</Error>
                   </div>
                   <div className={`${styles.inputSpaceArea}`}>
                     <Input
@@ -71,6 +76,7 @@ const ContactUsForm = () => {
                       type="text"
                       name="companyName"
                     />
+                     <Error>Please Enter Your's Company Name</Error>
                   </div>
                   <div className={`${styles.inputSpaceArea}`}>
                     <Textarea
