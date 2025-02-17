@@ -26,8 +26,6 @@ const NavigationMobile = () => {
   const [isTechMenu, setTechMenu] = useState(false);
   const [isMoreMenu, setMoreMenu] = useState(false);
 
-
-
   const mobileMenuToggle = () => {
     setMobileMenuShow(!mobileMenuShow);
     setTechMenu(false);
@@ -107,12 +105,11 @@ const NavigationMobile = () => {
                       />
                       Go Back
                     </button>
-                    <div className={cn(styles.overviewTech)}>
-                      <div className={cn(styles.multiHrefs)}>
+                    <div className={cn(styles.mainTech)}>
+                      <div className={cn(styles.multiLinks)}>
                         <div className="row">
                           <div className="col-sm-6">
-                       
-                            <Link href="" className={cn(styles.hrefInnerFlex)}>
+                            <Link href="" className={cn(styles.innerLinkHref)}>
                               <div className={styles.head}>
                                 <h4 className={styles.linkTitle}>
                                   {" "}
@@ -125,13 +122,13 @@ const NavigationMobile = () => {
                                   alt="arrow"
                                 />
                               </div>
-                              <p className={styles.excepPara}>
-                              Web development is building and maintaining
+                              <p className={styles.linkPara}>
+                                Web development is building and maintaining
                                 websites, including front-end, back-end, and
                                 full-stack development.
                               </p>
                             </Link>
-                            <Link href="" className={cn(styles.hrefInnerFlex)}>
+                            <Link href="" className={cn(styles.innerLinkHref)}>
                               <div className={styles.head}>
                                 <h4 className={styles.linkTitle}>
                                   {" "}
@@ -144,12 +141,12 @@ const NavigationMobile = () => {
                                   alt="arrow"
                                 />
                               </div>
-                              <p className={styles.excepPara}>
+                              <p className={styles.linkPara}>
                                 A CMS in UI enables no-code content management
                                 with seamless UX.
                               </p>
                             </Link>
-                            <Link href="" className={cn(styles.hrefInnerFlex)}>
+                            <Link href="" className={cn(styles.innerLinkHref)}>
                               <div className={styles.head}>
                                 <h4 className={styles.linkTitle}>
                                   Mobile Application
@@ -161,13 +158,13 @@ const NavigationMobile = () => {
                                   alt="arrow"
                                 />
                               </div>
-                              <p className={styles.excepPara}>
+                              <p className={styles.linkPara}>
                                 Mobile development creates apps for iOS and
                                 Android, focusing on performance, UI/UX, and
                                 platform compatibility.
                               </p>
                             </Link>
-                            <Link href="" className={cn(styles.hrefInnerFlex)}>
+                            <Link href="" className={cn(styles.innerLinkHref)}>
                               <div className={styles.head}>
                                 <h4 className={styles.linkTitle}>UI/UX</h4>
                                 <ImageCustom
@@ -177,7 +174,7 @@ const NavigationMobile = () => {
                                   alt="arrow"
                                 />
                               </div>
-                              <p className={styles.excepPara}>
+                              <p className={styles.linkPara}>
                                 UI (User Interface) focuses on design and
                                 visuals, while UX (User Experience) enhances
                                 usability and user satisfaction.
@@ -186,7 +183,7 @@ const NavigationMobile = () => {
                           </div>
 
                           <div className="col-sm-6">
-                            <Link href="" className={cn(styles.hrefInnerFlex)}>
+                            <Link href="" className={cn(styles.innerLinkHref)}>
                               <div className={styles.head}>
                                 <h4 className={styles.linkTitle}>
                                   Custom Development
@@ -198,13 +195,13 @@ const NavigationMobile = () => {
                                   alt="arrow"
                                 />
                               </div>
-                              <p className={styles.excepPara}>
+                              <p className={styles.linkPara}>
                                 Custom development creates tailored software
                                 solutions to meet specific business needs with
                                 flexibility and scalability.
                               </p>
                             </Link>
-                            <Link href="" className={cn(styles.hrefInnerFlex)}>
+                            <Link href="" className={cn(styles.innerLinkHref)}>
                               <div className={styles.head}>
                                 <h4 className={styles.linkTitle}>
                                   Micro services
@@ -216,7 +213,7 @@ const NavigationMobile = () => {
                                   alt="arrow"
                                 />
                               </div>
-                              <p className={styles.excepPara}>
+                              <p className={styles.linkPara}>
                                 Microservices is an architecture of small,
                                 independent services communicating via APIs for
                                 scalability and flexibility.
@@ -235,7 +232,6 @@ const NavigationMobile = () => {
                 Portfolio
               </Link>
             </li>
-          
           </ul>
           <div className={styles.contactBtn}>
             <Button className={styles.headerBtn} variant="brownBtn" size="lg">
@@ -244,24 +240,6 @@ const NavigationMobile = () => {
           </div>
         </nav>
         <div className={styles.headerRight}>
-          {/* <div className={styles.modeBtn}>
-            <button variant="default">
-              <ImageCustom
-                src="/arrow-left.svg"
-                width={20}
-                height={20}
-                alt="arrow"
-              />
-
-              <ImageCustom
-                src="/arrow-left.svg"
-                width={20}
-                height={20}
-                alt="arrow"
-              />
-            </button>
-          </div> */}
-
           <button
             className={cn(
               styles.navHamburger,

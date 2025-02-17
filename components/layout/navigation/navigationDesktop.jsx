@@ -22,9 +22,9 @@ const NavigationDesktop = () => {
 
   function OverTech() {
     return (
-      <div className={styles.overviewFlex}>
-        <div className={styles.overviewSubFlex}>
-          <div className={styles.overviewTitle}>
+      <div className={styles.introFlex}>
+        <div className={styles.introSubFlex}>
+          <div className={styles.introTitle}>
             <h1>Behind the Technology</h1>
             <p>
               "Your partner in navigating the inevitable
@@ -80,12 +80,12 @@ const NavigationDesktop = () => {
                 <section className={styles.subsection}>
                   {/* {LatestTech()} */}
 
-                  <div className={cn(styles.overviewTech)}>
+                  <div className={cn(styles.mainTech)}>
                     {OverTech()}
-                    <div className={cn(styles.multiHrefs)}>
+                    <div className={cn(styles.multiLinks)}>
                       <div className="row">
                         <div className="col-sm-12">
-                          <Link href="/" className={cn(styles.hrefInnerFlex)}>
+                          <Link href="/" className={cn(styles.innerLinkHref)}>
                             <div className={styles.head}>
                               <h4 className={styles.linkTitle}>
                                 Web Development
@@ -97,13 +97,13 @@ const NavigationDesktop = () => {
                                 alt="arrow"
                               />
                             </div>
-                            <p className={styles.excepPara}>
+                            <p className={styles.linkPara}>
                               Web development is building and maintaining
                               websites, including front-end, back-end, and
                               full-stack development.
                             </p>
                           </Link>
-                          <Link href="/" className={cn(styles.hrefInnerFlex)}>
+                          <Link href="/" className={cn(styles.innerLinkHref)}>
                             <div className={styles.head}>
                               <h4 className={styles.linkTitle}>
                                 Content Management System
@@ -115,12 +115,12 @@ const NavigationDesktop = () => {
                                 alt="arrow"
                               />
                             </div>
-                            <p className={styles.excepPara}>
+                            <p className={styles.linkPara}>
                               A CMS in UI enables no-code content management
                               with seamless UX.
                             </p>
                           </Link>
-                          <Link href="/" className={cn(styles.hrefInnerFlex)}>
+                          <Link href="/" className={cn(styles.innerLinkHref)}>
                             <div className={styles.head}>
                               <h4 className={styles.linkTitle}>
                                 Mobile Application
@@ -132,7 +132,7 @@ const NavigationDesktop = () => {
                                 alt="arrow"
                               />
                             </div>
-                            <p className={styles.excepPara}>
+                            <p className={styles.linkPara}>
                               Mobile development creates apps for iOS and
                               Android, focusing on performance, UI/UX, and
                               platform compatibility.
@@ -141,7 +141,7 @@ const NavigationDesktop = () => {
                         </div>
 
                         <div className="col-sm-12">
-                          <Link href="/" className={cn(styles.hrefInnerFlex)}>
+                          <Link href="/" className={cn(styles.innerLinkHref)}>
                             <div className={styles.head}>
                               <h4 className={styles.linkTitle}>UI/UX</h4>
                               <ImageCustom
@@ -151,13 +151,13 @@ const NavigationDesktop = () => {
                                 alt="arrow"
                               />
                             </div>
-                            <p className={styles.excepPara}>
+                            <p className={styles.linkPara}>
                               UI (User Interface) focuses on design and visuals,
                               while UX (User Experience) enhances usability and
                               user satisfaction.
                             </p>
                           </Link>
-                          <Link href="/" className={cn(styles.hrefInnerFlex)}>
+                          <Link href="/" className={cn(styles.innerLinkHref)}>
                             <div className={styles.head}>
                               <h4 className={styles.linkTitle}>
                                 Custom Development
@@ -169,13 +169,13 @@ const NavigationDesktop = () => {
                                 alt="arrow"
                               />
                             </div>
-                            <p className={styles.excepPara}>
+                            <p className={styles.linkPara}>
                               Custom development creates tailored software
                               solutions to meet specific business needs with
                               flexibility and scalability.
                             </p>
                           </Link>
-                          <Link href="/" className={cn(styles.hrefInnerFlex)}>
+                          <Link href="/" className={cn(styles.innerLinkHref)}>
                             <div className={styles.head}>
                               <h4 className={styles.linkTitle}>
                                 Micro services
@@ -187,7 +187,7 @@ const NavigationDesktop = () => {
                                 alt="arrow"
                               />
                             </div>
-                            <p className={styles.excepPara}>
+                            <p className={styles.linkPara}>
                               Microservices is an architecture of small,
                               independent services communicating via APIs for
                               scalability and flexibility.

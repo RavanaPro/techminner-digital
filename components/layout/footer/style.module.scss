@@ -1,6 +1,6 @@
 @import "../../../styles//partials/config";
 
-.footerSection {
+.mainSectionFooter {
   background-color: color(text-primary);
   padding: 3.75rem 7.5rem 3.75rem;
   color: color(primary-white);
@@ -130,7 +130,7 @@
     }
   }
 
-  .footLeftSide {
+  .leftBarFooter {
     padding-right: 7rem;
 
     @include desktop-hd {
@@ -152,7 +152,9 @@
       }
     }
 
-    .formFlex {
+  
+
+    .flexFlow {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -205,18 +207,18 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border: 0.14rem solid color(heading-liner);
+      border: 0.14rem solid color(primary-brown);
       border-radius: 1rem;
-      margin: 5rem 0 2.5rem;
+      margin: 2rem 0 2.5rem;
       color: rgba(color(primary-white), 0.8);
       @include transition(0.5s);
 
       &:hover {
-        border-color: color(info-blue);
+        border-color: color(info-brown);
       }
 
       @include mobile-tablet-p {
-        margin: 2.875em 0;
+        margin: 1.875em 0;
       }
 
       .partnerCols {
@@ -227,7 +229,7 @@
         }
 
         a {
-          color: color(info-blue);
+          color: color(info-brown);
           font-size: text(lg);
           font-weight: 500;
           display: flex;
@@ -238,8 +240,10 @@
             font-size: text(normal);
           }
 
-          svg {
+          img {
             margin-left: 0.5rem;
+            width: 16px;
+            height: 18px;
             path {
               stroke: color(primary-blue);
             }
@@ -445,11 +449,11 @@
     opacity: opacity(dark);
   }
 
-  .subscribe {
-    margin-top: 5rem;
+  // .subscribe {
+  //   margin-top: 5rem;
 
-    @include mobile-tablet-p {
-      margin-top: 3rem;
-    }
-  }
+  //   @include mobile-tablet-p {
+  //     margin-top: 3rem;
+  //   }
+  // }
 }

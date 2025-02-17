@@ -2,14 +2,14 @@
 
 import { Button } from "../../ui/button";
 import { ImageCustom } from "../../ui/imageCustom";
-import { Input, Error, Success } from "../../ui/inputCustom";
+import { Input } from "../../ui/inputCustom";
 import { cn } from "../../../lib/utils";
 import Link from "next/link";
 import styles from "./style.module.scss";
 
 const Footer = () => {
   return (
-    <footer className={styles.footerSection}>
+    <footer className={styles.mainSectionFooter}>
       <div className={cn("primary-container")}>
         <div className={styles.logo}>
           <ImageCustom
@@ -22,16 +22,37 @@ const Footer = () => {
 
         <div className="row">
           <div className="col-12 col-lg-6">
-            <div className={styles.footLeftSide}>
+            <div className={styles.leftBarFooter}>
               <p className={styles.description}>
                 Accelerating Digital Growth & Business Success
               </p>
+
+              <div className={styles.partnerCard}>
+                <div className={styles.partnerCols}>
+                  <Link href="/">
+                    Become our Partner{" "}
+                    <ImageCustom
+                      src="/arrow-right.svg"
+                      width={16}
+                      height={16}
+                      alt="arrow"
+                    />
+                  </Link>
+                  <p>Join our partnership network now!</p>
+                </div>
+                <ImageCustom
+                  src="/footer-partner.webp"
+                  width={294}
+                  height={198}
+                  alt="partner-img"
+                />
+              </div>
 
               <div className={styles.subscribe}>
                 <h4 className="mb-3">Subscribe for Exclusive Insights</h4>
 
                 <form>
-                  <div className={styles.formFlex}>
+                  <div className={styles.flexFlow}>
                     <Input
                       inputFloatingStyle={styles.inputFloatingStyle}
                       inputStyle={styles.inputStyle}
@@ -90,15 +111,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        {/* <div className={styles.footCopyright}>
-          <p>fgde</p>
-          <ul>
-            <li>
-              <Link href="/">hello</Link>
-            </li>
-          </ul>
-        </div> */}
       </div>
     </footer>
   );
