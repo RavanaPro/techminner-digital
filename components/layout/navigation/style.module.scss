@@ -212,6 +212,7 @@
         .subMenu {
           display: block;
           animation: slide-down 0.5s ease-in-out;
+          background-color: transparent;
 
           @keyframes slide-down {
             0% {
@@ -237,6 +238,35 @@
       a {
         &::after {
           display: none;
+        }
+      }
+
+      nav {
+        ul {
+          li {
+            &.dropDown {
+              > a {
+                &.active {
+                  .arrow {
+                    border-color: color(info-blue);
+                  }
+                }
+              }
+            }
+            a,
+            .linkButton,
+            button {
+              color: color(primary-white);
+
+              &::after {
+                background-color: color(primary-white);
+              }
+
+              &.active {
+                color: color(info-blue);
+              }
+            }
+          }
         }
       }
     }
@@ -405,14 +435,12 @@
     .headerBtn {
       display: flex;
       align-items: center;
-      gap: .625rem;
+      gap: 0.625rem;
       color: color(info-brown);
       font-weight: 500;
       @include tablet {
         display: none;
       }
-
-     
     }
   }
 
@@ -422,55 +450,27 @@
     left: 50%;
     top: calc(100% + 0rem);
     transform: translate(-50%);
-    // background-color: color(dark-gray);
+    background-color: color(dark-gray);
     width: auto;
     min-width: 70rem;
     z-index: 99;
     margin: 0;
-    margin-left: -2rem;
     border: 0.063rem solid rgba(color(text-primary), 0.2);
     border-radius: 0.5rem;
     box-shadow: 0 5px 32px rgba(color(text-primary), 0.2);
 
     @include mobile-tablet-p {
       display: block;
-      left: -100%;
+      left: 0;
       transform: inherit;
       top: 70px;
       min-width: auto;
       width: 100%;
       height: calc(100dvh - 70px);
-      padding: 0 !important;
+      padding: 0;
       position: fixed;
-      margin-left: 0;
       background-color: color(text-primary);
       overflow-y: scroll;
-      &.slideIn {
-        animation: slideIn 0.5s ease-in-out;
-        left: 0;
-      }
-
-      @keyframes slideIn {
-        0% {
-          left: -100%;
-        }
-        100% {
-          left: 0%;
-        }
-      }
-      &.slideOut {
-        left: -100%;
-        animation: slideOut 0.5s ease-in-out;
-      }
-
-      @keyframes slideOut {
-        0% {
-          left: 0%;
-        }
-        100% {
-          left: -100%;
-        }
-      }
     }
 
     &.singleLayout {
@@ -494,7 +494,7 @@
         border-bottom: none;
         font-weight: 500;
         font-size: text(normal);
-        color: color(primary-white);
+        color: color(text-primary);
         margin: 0;
         white-space: nowrap;
         transition: all 0.3s;
@@ -535,6 +535,7 @@
       width: 100%;
       display: flex;
       justify-content: center;
+      background-color: transparent;
 
       @include mobile-tablet-p {
         flex-direction: column;
@@ -547,25 +548,10 @@
         background-color: color(dark-gray);
         padding: 3rem;
 
-        @include tablet {
-          max-width: 100%;
-
-          > div {
-            display: flex;
-            gap: 1.25rem;
-          }
-        }
-
-        @include mobile {
+        @include mobile-tablet-p {
           padding: 1.25rem;
           min-width: auto;
           max-width: 100%;
-
-          > div {
-            display: flex;
-            gap: 1.25rem;
-            flex-direction: column;
-          }
         }
 
         h1 {
@@ -587,23 +573,19 @@
           flex-direction: column;
 
           &:hover {
-            border-color: color(heading-liner);
+            border-color: color(primary-blue);
           }
 
-          .imgBox {
-            margin-bottom: 1rem;
+          .imgBox div {
+            height: 116px;
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
 
-            div {
-              height: 116px;
+            img {
               width: 100%;
-              border-radius: 12px;
-              overflow: hidden;
-
-              img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-              }
+              height: 100%;
+              object-fit: cover;
             }
           }
           .infoBox {
@@ -619,6 +601,7 @@
               line-height: normal;
               margin-bottom: 0;
               color: #e3e3e3;
+              margin-top: 1rem;
             }
 
             svg {
@@ -648,13 +631,9 @@
 
         @include mobile-tablet-p {
           max-width: 100%;
-          padding: 1rem spacing(tablet-padding);
+          padding: 1.25rem;
           min-height: 100%;
           max-height: 100%;
-        }
-
-        @include mobile {
-          padding: spacing(mobile-padding);
         }
 
         .overviewFlex {
@@ -662,15 +641,7 @@
           justify-content: space-between;
           align-items: center;
 
-          @include tablet {
-            display: grid;
-            grid-template-columns: auto 30%;
-            gap: 10px;
-            margin-bottom: 3rem;
-          }
-
-          @include mobile {
-            display: flex;
+          @include mobile-tablet-p {
             flex-direction: column;
             margin-bottom: 2rem;
           }
@@ -678,6 +649,10 @@
           .overviewSubFlex {
             display: flex;
             gap: 1.5rem;
+
+            @include mobile-tablet-p {
+              // flex-direction: column;
+            }
           }
 
           h1 {
@@ -699,10 +674,6 @@
 
           .overviewBtn {
             margin-top: 2rem;
-
-            button {
-              color: color(info-blue);
-            }
 
             @include mobile-tablet-p {
               width: 100%;
@@ -727,7 +698,7 @@
           cursor: pointer;
           display: flex;
           justify-content: space-between;
-          align-items: start;
+          align-items: center;
           justify-content: flex-start;
           flex-direction: column;
           width: 100%;
@@ -740,14 +711,6 @@
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           height: 60px;
           margin-bottom: 16px;
-
-          @include mobile-tablet-p {
-            justify-content: center;
-
-            &:focus {
-              border-color: color(heading-liner);
-            }
-          }
 
           .head {
             display: flex;
@@ -771,22 +734,16 @@
             color: #e3e3e3 !important;
             margin-top: 1rem;
             @include truncate(3);
-            opacity: opacity(dark);
-
-            @include mobile-tablet-p {
-              display: none;
-            }
+            opacity: 0;
           }
 
-          @include desktop {
-            &:hover {
-              height: 128px;
-              border: 0.125rem solid color(primary-brown);
-              z-index: 99;
+          &:hover {
+            height: 128px;
+            border: 0.125rem solid color(info-brown);
+            z-index: 99;
 
-              .excepPara {
-                opacity: opacity(dark);
-              }
+            .excepPara {
+              opacity: 1;
             }
           }
         }
@@ -816,10 +773,10 @@
     display: flex;
     justify-content: flex-start;
     gap: 0.75rem;
-    padding: 1.625rem spacing(tablet-padding);
+    padding: 1.625rem 1.5rem;
 
     @include mobile {
-      padding: 1.625rem spacing(mobile-padding);
+      padding: 1.625rem 1.5rem;
     }
 
     svg path {

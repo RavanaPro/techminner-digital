@@ -14,6 +14,7 @@ const VideoCustom = (props) => {
   return (
     <div className={`${styles.videoCustom}`}>
       <video
+        playsInline
         className={styles.video}
         id="my-video"
         width={props.width}
