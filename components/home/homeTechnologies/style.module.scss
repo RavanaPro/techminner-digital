@@ -1,0 +1,191 @@
+@import "~/styles/partials/config";
+
+.homeTechnologiesStyle {
+  padding: 8.75rem 7.5rem;
+  background: color(dark-bg);
+
+  @include tablet {
+    padding: 3.75rem 3rem;
+  }
+
+  @include mobile {
+    padding: 3rem 1.25rem;
+  }
+
+  .careerRow {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8.9375rem;
+
+    @include mobile-tablet-p {
+      margin-bottom: 0;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2.5rem;
+    }
+
+    .careerBtn {
+      display: flex;
+      justify-content: flex-end;
+      white-space: nowrap;
+
+      @include mobile {
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  .projectHighlight {
+    font-size: text(normal);
+    font-weight: 500;
+    opacity: opacity(light);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: color(primary-white);
+  }
+
+  .datingText {
+    font-size: 2.75rem;
+    font-weight: 500;
+    line-height: 3.375rem;
+    max-width: 100%;
+    margin-bottom: 0;
+    color: color(info-brown);
+
+    @include mobile-tablet-p {
+      font-size: text(xxxl);
+      line-height: 2.5rem;
+      padding-right: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .ourNumberMain {
+    .ourNumberGrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8.9375rem;
+
+      @include mobile-tablet-p {
+        gap: 0 1rem;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .ourNumbersImg div {
+        margin-left: auto;
+        width: 100%;
+        height: 40.688rem;
+        border-radius: 0.75rem;
+        overflow: hidden;
+        position: relative;
+
+        @include mobile-tablet-p {
+          width: 100%;
+          height: 27rem;
+          margin: 2.75rem 0;
+        }
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+
+          @include mobile {
+            object-fit: contain;
+          }
+        }
+      }
+
+      .desktopCards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2.5rem;
+        height: 630px;
+        overflow: hidden;
+        overflow-y: scroll;
+
+        @include mobile {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+    .ourNumbersText {
+      font-size: text(lg);
+      font-weight: 400;
+      line-height: 1.875rem;
+      margin-bottom: 3.75rem;
+      opacity: opacity(dark);
+
+      @include mobile-tablet-p {
+        font-size: text(normal);
+        margin-bottom: 2.75rem;
+      }
+    }
+    .ourNumberOption {
+      .serviceBox {
+        text-align: center;
+        background-color: color(primary-white);
+        padding: text(xxxl);
+        border-radius: text(xl);
+        border: 0.125rem solid color(primary-white);
+        @include transition(0.5s);
+
+        &:hover {
+          border-color: color(heading-liner);
+          cursor: pointer;
+        }
+
+        @include mobile {
+          margin-right: text(xl);
+          min-height: 18.5rem;
+          padding: text(lg);
+        }
+
+        .numberCardFlex {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: text(xxxl);
+          .sbTitle {
+            font-size: 2.75rem;
+            font-weight: 500;
+            margin-bottom: 0;
+            min-height: 2.75rem;
+            color: color(heading-liner);
+            background: linear-gradient(
+              118deg,
+              color(primary-blue) 11.5%,
+              color(heading-liner) 55.42%
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        .sbText {
+          font-weight: 400;
+          font-size: text(lg);
+          line-height: 1.875rem;
+          opacity: opacity(dark);
+          text-align: left;
+          margin-bottom: 0;
+          @include mobile {
+            font-size: text(normal);
+          }
+        }
+      }
+    }
+  }
+
+  .mobileSlider {
+    display: none;
+
+    @include mobile {
+      display: block;
+      margin-right: -20px;
+    }
+  }
+}

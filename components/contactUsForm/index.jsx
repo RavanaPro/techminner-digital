@@ -35,7 +35,7 @@ const ContactUsForm = () => {
                       placeholder="First Name*"
                       type="name"
                     />
-                    <Error>Please Enter First Name</Error>
+                    {/* <Error>Please Enter First Name</Error> */}
                   </div>
                   <div className={`${styles.inputSpaceArea}`}>
                     <Input
@@ -43,12 +43,12 @@ const ContactUsForm = () => {
                       placeholder="Last Name*"
                       type="name"
                     />
-                    <Error>Please Enter Last Name</Error>
+                    {/* <Error>Please Enter Last Name</Error> */}
                   </div>
 
                   <div className={`${styles.inputSpaceArea}`}>
                     <Input label="Email*" placeholder="Email*" type="email" />
-                    <Error>Please Enter Email</Error>
+                    {/* <Error>Please Enter Email</Error> */}
                   </div>
                   <div className={`${styles.inputSpaceArea}`}>
                     <Input
@@ -57,7 +57,7 @@ const ContactUsForm = () => {
                       type="text"
                       name="phoneNumber*"
                     />
-                    <Error>Please Phone Number</Error>
+                    {/* <Error>Please Phone Number</Error> */}
                   </div>
 
                   <div className={`${styles.inputSpaceArea}`}>
@@ -67,7 +67,7 @@ const ContactUsForm = () => {
                       type="text"
                       name="Purpose"
                     />
-                    <Error>Please Enter Your's Enquiry</Error>
+                    {/* <Error>Please Enter Your's Enquiry</Error> */}
                   </div>
                   <div className={`${styles.inputSpaceArea}`}>
                     <Input
@@ -76,7 +76,7 @@ const ContactUsForm = () => {
                       type="text"
                       name="companyName"
                     />
-                     <Error>Please Enter Your's Company Name</Error>
+                     {/* <Error>Please Enter Your Company Name</Error> */}
                   </div>
                   <div className={`${styles.inputSpaceArea}`}>
                     <Textarea

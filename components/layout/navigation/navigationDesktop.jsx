@@ -1,5 +1,4 @@
 "use client";
-import { Button } from "../../ui/button";
 import { ImageCustom } from "../../ui/imageCustom";
 import { cn } from "../../../lib/utils";
 import Link from "next/link";
@@ -99,8 +98,9 @@ const NavigationDesktop = () => {
                               />
                             </div>
                             <p className={styles.excepPara}>
-                              Be a partner for industry verticals on the
-                              inevitable journey towards enterprise.
+                              Web development is building and maintaining
+                              websites, including front-end, back-end, and
+                              full-stack development.
                             </p>
                           </Link>
                           <Link href="/" className={cn(styles.hrefInnerFlex)}>
@@ -116,8 +116,8 @@ const NavigationDesktop = () => {
                               />
                             </div>
                             <p className={styles.excepPara}>
-                              Be a partner for industry verticals on the
-                              inevitable journey towards enterprise.
+                              A CMS in UI enables no-code content management
+                              with seamless UX.
                             </p>
                           </Link>
                           <Link href="/" className={cn(styles.hrefInnerFlex)}>
@@ -133,8 +133,9 @@ const NavigationDesktop = () => {
                               />
                             </div>
                             <p className={styles.excepPara}>
-                              Be a partner for industry verticals on the
-                              inevitable journey towards enterprise.
+                              Mobile development creates apps for iOS and
+                              Android, focusing on performance, UI/UX, and
+                              platform compatibility.
                             </p>
                           </Link>
                         </div>
@@ -151,8 +152,9 @@ const NavigationDesktop = () => {
                               />
                             </div>
                             <p className={styles.excepPara}>
-                              Be a partner for industry verticals on the
-                              inevitable journey towards enterprise.
+                              UI (User Interface) focuses on design and visuals,
+                              while UX (User Experience) enhances usability and
+                              user satisfaction.
                             </p>
                           </Link>
                           <Link href="/" className={cn(styles.hrefInnerFlex)}>
@@ -168,8 +170,9 @@ const NavigationDesktop = () => {
                               />
                             </div>
                             <p className={styles.excepPara}>
-                              Be a partner for industry verticals on the
-                              inevitable journey towards enterprise.
+                              Custom development creates tailored software
+                              solutions to meet specific business needs with
+                              flexibility and scalability.
                             </p>
                           </Link>
                           <Link href="/" className={cn(styles.hrefInnerFlex)}>
@@ -185,8 +188,9 @@ const NavigationDesktop = () => {
                               />
                             </div>
                             <p className={styles.excepPara}>
-                              Be a partner for industry verticals on the
-                              inevitable journey towards enterprise.
+                              Microservices is an architecture of small,
+                              independent services communicating via APIs for
+                              scalability and flexibility.
                             </p>
                           </Link>
                         </div>
@@ -199,121 +203,10 @@ const NavigationDesktop = () => {
             <li className={styles.menuItem}>
               <Link href="/">Portfolio</Link>
             </li>
-            {/* <li className={styles.dropDown}>
-              <Link href="/">
-                <ImageCustom
-                  src="/arrow-left.svg"
-                  width={20}
-                  height={20}
-                  alt="arrow"
-                />
-                More
-                <div className={cn(styles.arrow, styles.hideDesktopIcon)} />
-              </Link>
-              <ul className={cn(styles.subMenu, styles.singleLayout)}>
-                <div className={styles.subsection}>
-                  {LatestTech()}
-                  <div className={cn(styles.overviewTech)}>
-                    <div className={cn(styles.multiHrefs)}>
-                      <div className="row">
-                        <div className="col-sm-12">
-                          <Link
-                            href="/careers"
-                            className={cn(styles.hrefInnerFlex)}
-                          >
-                            <div className={styles.head}>
-                              <h4 className={styles.linkTitle}>Careers</h4>
-                              <ImageCustom
-                                src="/arrow-left.svg"
-                                width={20}
-                                height={20}
-                                alt="arrow"
-                              />
-                            </div>
-                            <p className={styles.excepPara}>
-                              Be a partner for industry verticals on the
-                              inevitable journey towards enterprise.
-                            </p>
-                          </Link>
-                          <Link href="/" className={cn(styles.hrefInnerFlex)}>
-                            <div className={styles.head}>
-                              <h4 className={styles.linkTitle}>Insights</h4>
-                              <ImageCustom
-                                src="/arrow-left.svg"
-                                width={20}
-                                height={20}
-                                alt="arrow"
-                              />
-                            </div>
-                            <p className={styles.excepPara}>
-                              Be a partner for industry verticals on the
-                              inevitable journey towards enterprise.
-                            </p>
-                          </Link>
-                          <Link
-                            href="/coe"
-                            className={cn(styles.hrefInnerFlex)}
-                          >
-                            <div className={styles.head}>
-                              <h4 className={styles.linkTitle}>
-                                Centre of Excellence
-                              </h4>
-                              <ImageCustom
-                                src="/arrow-left.svg"
-                                width={20}
-                                height={20}
-                                alt="arrow"
-                              />
-                            </div>
-                            <p className={styles.excepPara}>
-                              Be a partner for industry verticals on the
-                              inevitable journey towards enterprise.
-                            </p>
-                          </Link>
-                          <Link
-                            href="/accelerators"
-                            className={cn(styles.hrefInnerFlex)}
-                          >
-                            <div className={styles.head}>
-                              <h4 className={styles.linkTitle}>Accelerators</h4>
-                              <ImageCustom
-                                src="/arrow-left.svg"
-                                width={20}
-                                height={20}
-                                alt="arrow"
-                              />
-                            </div>
-                            <p className={styles.excepPara}>
-                              Be a partner for industry verticals on the
-                              inevitable journey towards enterprise.
-                            </p>
-                          </Link>
-                          <Link href="/" className={cn(styles.hrefInnerFlex)}>
-                            <div className={styles.head}>
-                              <h4 className={styles.linkTitle}>Contact us</h4>
-                              <ImageCustom
-                                src="/arrow-left.svg"
-                                width={20}
-                                height={20}
-                                alt="arrow"
-                              />
-                            </div>
-                            <p className={styles.excepPara}>
-                              Be a partner for industry verticals on the
-                              inevitable journey towards enterprise.
-                            </p>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </ul>
-            </li> */}
           </ul>
         </nav>
         <div className={styles.headerRight}>
-        <Link href="/" className={styles.headerBtn}>
+          <Link href="/" className={styles.headerBtn}>
             <ImageCustom
               src="/phone-call.svg"
               width={19}

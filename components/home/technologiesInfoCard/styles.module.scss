@@ -1,0 +1,57 @@
+@import "~/styles/partials/config";
+
+// .serviceBox {
+.infoBox {
+  text-align: center;
+  background-color: color(text-primary);
+  padding: text(xxxl);
+  border-radius: text(xl);
+  border: 0.125rem solid rgba(color(text-primary), 0.12);
+  @include transition(0.4s);
+
+  &:hover {
+    border-color: color(info-brown);
+  }
+
+  @include mobile {
+    min-height: auto;
+    padding: 1.25rem;
+    border-radius: text(xl);
+    max-width: 100%;
+  }
+  .infoCardFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: text(xxxl);
+
+    @include mobile {
+      margin-bottom: text(xl);
+    }
+
+    .sbTitle {
+      font-size: 1.875rem;
+      font-weight: 500;
+      margin-bottom: 0;
+      color: color(info-brown);
+      @include textGradient;
+
+      @include mobile {
+        font-size: text(lg);
+      }
+    }
+  }
+  .sbText {
+    font-weight: 400;
+    font-size: text(lg);
+    line-height: 1.875rem;
+    opacity: 0.7;
+    text-align: left;
+    margin-bottom: 0;
+    color: color(primary-white);
+
+    @include mobile {
+      font-size: text(normal);
+    }
+  }
+}

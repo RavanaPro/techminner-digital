@@ -270,7 +270,7 @@ $desktop-normal: 1025px;
   display: inline;
 }
 
-// ScrollBar Custmize
+// ScrollBar custom
 @mixin scrollbarCustom {
   &::-webkit-scrollbar {
     width: 2px;

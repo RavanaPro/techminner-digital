@@ -9,6 +9,19 @@ import { useEffect, useState } from "react";
 import styles from "./style.module.scss";
 
 const NavigationMobile = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY > 0;
+      setIsScrolled(scrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const [mobileMenuShow, setMobileMenuShow] = useState(false);
   const [isTechMenu, setTechMenu] = useState(false);
   const [isMoreMenu, setMoreMenu] = useState(false);
@@ -125,7 +138,13 @@ const NavigationMobile = () => {
   }
 
   return (
-    <header className={cn(styles.headerMain, styles.headerMobile)}>
+    <header
+      className={cn(
+        styles.headerMain,
+        styles.headerMobile,
+        isScrolled ? styles.headerDark : styles.headerLight
+      )}
+    >
       <div className={cn(styles.headerContainer, "primary-container")}>
         <div className={styles.logo}>
           <Link href="/" className={styles.lightLogo}>
