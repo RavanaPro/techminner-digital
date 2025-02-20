@@ -38,10 +38,10 @@ const Footer = () => {
                       alt="arrow"
                     />
                   </Link>
-                  <p>Join our partnership network now!</p>
+                  <p>Connect with our partnership network today!</p>
                 </div>
                 <ImageCustom
-                  src="/footer-partner.webp"
+                  src="/footer-partner.svg"
                   width={294}
                   height={198}
                   alt="partner-img"

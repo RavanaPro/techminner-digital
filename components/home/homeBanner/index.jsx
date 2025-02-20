@@ -30,9 +30,16 @@ const HomeBanner = () => {
       </div>
 
       <div className={styles.videoWrapper}>
-        <VideoCustom type="video/mp4" src="../banner-video.mp4" width={1200} height={400} />
+        <VideoCustom
+          type="video/mp4"
+          src="../banner-video.mp4"
+          width={1200}
+          height={400}
+        />
         <div className={styles.overlay}></div>
       </div>
+
+     
     </section>
   );
 };
