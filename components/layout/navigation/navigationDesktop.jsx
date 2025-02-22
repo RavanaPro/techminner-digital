@@ -67,7 +67,7 @@ const NavigationDesktop = () => {
         <nav>
           <ul>
             <li className={styles.menuItem}>
-              <Link href="/">About Us</Link>
+              <Link href="/about">About Us</Link>
             </li>
             <li className={styles.menuItem}>
               <Link href="/">Solutions</Link>

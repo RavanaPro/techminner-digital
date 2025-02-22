@@ -610,10 +610,9 @@ html.lenis {
   .react-select__control {
     position: relative;
     background-color: color(dark-gray);
-    border: .14rem solid #ffffff1f;
+    border: 0.14rem solid #ffffff1f;
     background-color: #1f1f1f;
-    transition: all .5s ease-in-out;
-    
+    transition: all 0.5s ease-in-out;
   }
 
   .react-select__single-value {
@@ -653,4 +652,3 @@ html.lenis {
   animation: key1 0.3s ease infinite alternate;
   z-index: 99;
 }
-

@@ -73,7 +73,7 @@ const NavigationMobile = () => {
           <h4 className={styles.mobileTitle}>Menu</h4>
           <ul>
             <li className={styles.menuItem}>
-              <Link href="/" onClick={closeMenu}>
+              <Link href="/about" onClick={closeMenu}>
                 About Us
               </Link>
             </li>
