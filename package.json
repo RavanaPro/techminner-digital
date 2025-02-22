@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "20": "^1.0.0",
     "bootstrap": "^5.3.3",
     "class-variance-authority": "^0.7.1",
     "friendly-errors-webpack-plugin": "^1.7.0",
@@ -16,10 +17,13 @@
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router-dom": "^7.1.5",
+    "react-email": "^3.0.7",
+    "react-router": "^6.29.0",
+    "react-router-dom": "^6.29.0",
     "react-select": "^5.10.0",
+    "resend": "^4.1.2",
     "sass": "^1.83.4",
-    "utils": "^0.3.1"
+    "utils": "^0.2.2"
   },
   "devDependencies": {
     "@types/node": "^20",
