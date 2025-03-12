@@ -78,7 +78,7 @@ const NavigationMobile = () => {
               </Link>
             </li>
             <li className={styles.menuItem}>
-              <Link href="/" onClick={closeMenu}>
+              <Link href="/solutions" onClick={closeMenu}>
                 Solutions
               </Link>
             </li>

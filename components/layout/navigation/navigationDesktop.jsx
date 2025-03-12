@@ -70,7 +70,7 @@ const NavigationDesktop = () => {
               <Link href="/about">About Us</Link>
             </li>
             <li className={styles.menuItem}>
-              <Link href="/">Solutions</Link>
+              <Link href="/solutions">Solutions</Link>
             </li>
             <li className={styles.dropDown}>
               <Link href="/">
