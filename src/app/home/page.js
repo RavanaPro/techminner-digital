@@ -1,9 +1,11 @@
 "use client";
 
-import { createRef, useRef } from "react";
+import {useRef } from "react";
 import HomeBanner from "../../../components/home/homeBanner";
 import ContactUsForm from "../../../components/contactUsForm";
 import HomeTechnologies from "../../../components/home/homeTechnologies";
+import CustomLoader from "../../../components/ui/customLoader";
+
 
 const HomePage = () => {
   // ✅ Create a ref for the next section
@@ -20,6 +22,8 @@ const HomePage = () => {
 
   return (
     <>
+
+   <CustomLoader />
       {/* ✅ Home Banner Section */}
       <HomeBanner />
 

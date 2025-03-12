@@ -26,6 +26,7 @@
     &:hover,
     &:focus {
       border-color: color(info-brown);
+      background-color: color(dark-gray);
     }
 
     &.inputErrorStyle {
@@ -126,7 +127,7 @@
   }
 
   .buttonUpload:focus {
-    outline-offset: 4px; /* make Chrome show a focus ring around the button */
+    outline-offset: 4px; 
   }
 
   .filePath {

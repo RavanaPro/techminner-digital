@@ -1,0 +1,46 @@
+@import "../../../styles/partials/config";
+
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  pointer-events: none;
+
+  img {
+    height: 250px;
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: contain;
+    width: 250px;
+    animation: fadeInOut 3s ease-in-out infinite;
+  }
+  @include mobile-tablet-p {
+    img {
+      min-height: 200px;
+      min-width: 200px;
+      max-height: 200px;
+      object-fit: contain;
+    }
+  }
+
+  @keyframes fadeInOut {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+}
