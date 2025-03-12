@@ -25,12 +25,11 @@ export default function RootLayout({ children }) {
           }}
         />
 
-       
+      
       </Head>
 
       <body className={cn(aeonik.variable, helvetica.variable)}>
-    
-         
+       
         <Header />
         <div className={cn("main-style")}>{children}</div>
         <Footer />
