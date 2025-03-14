@@ -91,7 +91,6 @@
           padding: 2rem 1rem;
         }
       }
-
       .frontCard,
       .backCard {
         position: absolute;
@@ -121,7 +120,7 @@
       }
 
       h6 {
-        font-size: text(xl);
+        font-size: 20px;
         position: relative;
         width: 100%;
         max-width: 9rem;
@@ -129,7 +128,7 @@
         padding-bottom: 2rem;
         transition: all 0.5s;
         @include mobile-tablet-p {
-          font-size: text(lg);
+          font-size: 20px;
           font-weight: 500;
           line-height: text(lg);
         }

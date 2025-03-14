@@ -11,28 +11,28 @@ const SolutionWhatWeDo = () => {
 
   const cardData = [
     {
-      imgSrc: "/arrow-left.svg",
+      imgSrc: "/manage-service-icon.svg",
       title: "Managed IT Services",
       content:
         "Techminner leverages cutting-edge technology and a customer-centric approach to drive innovation and enhance IT efficiency.",
     },
 
     {
-      imgSrc: "/arrow-left.svg",
+      imgSrc: "/cloud-server-icon.svg",
       title: "Cloud Solutions",
       content:
-        "Techminner provides secure, scalable, and efficient cloud solutions, ensuring seamless operations, enhanced security, and optimized performance for your business.",
+        "Techminner delivers secure, scalable cloud solutions for seamless operations, enhanced security, and optimized performance.",
     },
 
     {
-      imgSrc: "/arrow-left.svg",
+      imgSrc: "/custom.svg",
       title: "Custom Software Development",
       content:
-        "Techminner delivers tailored, high-performance custom software solutions designed to enhance efficiency, scalability, and innovation for your business.",
+        "Techminner delivers custom software solutions that enhance efficiency, scalability, and innovation.",
     },
 
     {
-      imgSrc: "/arrow-left.svg",
+      imgSrc: "/enterprise.svg",
       title: "IT Consulting & Strategy",
       content:
         "Techminner offers expert IT consulting and strategy services, helping businesses leverage technology for growth, efficiency, and long-term success.",
@@ -44,7 +44,8 @@ const SolutionWhatWeDo = () => {
         <div className={cn(styles.flexContainer)}>
           <h6 className={styles.solutionTitle}>Our Solution Accelerators</h6>
           <h3 className={styles.solutionHeading}>
-          With deep tech expertise, we deliver innovative solutions to tackle critical business challenges.
+            With deep tech expertise, we deliver innovative solutions to tackle
+            critical business challenges.
           </h3>
         </div>
 
@@ -56,8 +57,8 @@ const SolutionWhatWeDo = () => {
                   <div className={`${styles.frontCard} ${styles.solutionCols}`}>
                     <ImageCustom
                       src={data.imgSrc}
-                      width={20}
-                      height={20}
+                      width={70}
+                      height={70}
                       alt="slider-img"
                     />
                     <h6>{data.title}</h6>
