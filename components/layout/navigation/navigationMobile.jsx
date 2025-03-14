@@ -77,11 +77,6 @@ const NavigationMobile = () => {
                 About Us
               </Link>
             </li>
-            <li className={styles.menuItem}>
-              <Link href="/solutions" onClick={closeMenu}>
-                Solutions
-              </Link>
-            </li>
             <li className={styles.dropDown}>
               <button
                 className={cn(styles.linkButton)}
@@ -228,10 +223,12 @@ const NavigationMobile = () => {
               )}
             </li>
             <li className={styles.menuItem}>
-              <Link href="/" onClick={closeMenu}>
-                Portfolio
+              <Link href="/solutions" onClick={closeMenu}>
+                Solutions
               </Link>
             </li>
+         
+            
           </ul>
           <div className={styles.contactBtn}>
             <Button className={styles.headerBtn} variant="brownBtn" size="lg">

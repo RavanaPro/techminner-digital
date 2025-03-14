@@ -20,7 +20,7 @@ const SolutionBanner = () => {
 
         <div className={styles.landingBannerStyle}>
           <ImageCustom
-            src="/about-us-banner.svg"
+            src="/solution-banner.svg"
             width={1440}
             height={650}
             alt="bannerImg"

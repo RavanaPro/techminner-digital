@@ -38,7 +38,7 @@ const MobileSlider = ({ children, slidesToShow }) => {
           onClick={() => slider?.current?.slickPrev()}
         >
           <ImageCustom
-            src="/arrow-right.svg"
+            src="/arrow-left.svg"
             width={18}
             height={18}
             alt="arrow"
@@ -49,7 +49,7 @@ const MobileSlider = ({ children, slidesToShow }) => {
           onClick={() => slider?.current?.slickNext()}
         >
           <ImageCustom
-            src="/arrow-left.svg"
+            src="/arrow-right.svg"
             width={18}
             height={18}
             alt="arrow"

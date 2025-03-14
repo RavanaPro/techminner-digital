@@ -39,21 +39,21 @@ const SolutionWhatWeDo = () => {
     },
   ];
   return (
-    <section className={`${styles.whatWeDo}`}>
+    <section className={`${styles.solutionWeProvide}`}>
       <div className={cn("primary-container")}>
         <div className={cn(styles.flexContainer)}>
-          <h6 className={styles.weDoTitle}>Our Solution Accelerators</h6>
-          <h3 className={styles.weDoHeading}>
+          <h6 className={styles.solutionTitle}>Our Solution Accelerators</h6>
+          <h3 className={styles.solutionHeading}>
           With deep tech expertise, we deliver innovative solutions to tackle critical business challenges.
           </h3>
         </div>
 
         {!isMobileScreen && (
-          <div className={styles.workCardWrapper}>
+          <div className={styles.solutionCardWrapper}>
             {cardData.map((data, index) => (
-              <div key={index} className={styles.workCardMain}>
-                <div className={styles.workCard}>
-                  <div className={`${styles.frontCard} ${styles.workCols}`}>
+              <div key={index} className={styles.solutionCardMain}>
+                <div className={styles.solutionCard}>
+                  <div className={`${styles.frontCard} ${styles.solutionCols}`}>
                     <ImageCustom
                       src={data.imgSrc}
                       width={20}
@@ -62,7 +62,7 @@ const SolutionWhatWeDo = () => {
                     />
                     <h6>{data.title}</h6>
                   </div>
-                  <div className={`${styles.backCard}  ${styles.workCols}`}>
+                  <div className={`${styles.backCard}  ${styles.solutionCols}`}>
                     <h6>{data.title} </h6>
                     <p>{data.content} </p>
                   </div>
@@ -75,11 +75,11 @@ const SolutionWhatWeDo = () => {
 
       {isMobileScreen && (
         <div className={styles.mobileSlider}>
-          <MobileSlider slidesToShow={1.4}>
+          <MobileSlider slidesToShow={1.5}>
             {cardData.map((data, index) => (
-              <div key={index} className={styles.workCardMain}>
-                <div className={styles.workCard}>
-                  <div className={`${styles.frontCard} ${styles.workCols}`}>
+              <div key={index} className={styles.solutionCardMain}>
+                <div className={styles.solutionCard}>
+                  <div className={`${styles.frontCard} ${styles.solutionCols}`}>
                     <ImageCustom
                       src={data.imgSrc}
                       width={20}
@@ -88,7 +88,7 @@ const SolutionWhatWeDo = () => {
                     />
                     <h6>{data.title}</h6>
                   </div>
-                  <div className={`${styles.backCard}  ${styles.workCols}`}>
+                  <div className={`${styles.backCard}  ${styles.solutionCols}`}>
                     <h6>{data.title} </h6>
                     <p>{data.content} </p>
                   </div>

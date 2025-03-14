@@ -6,26 +6,26 @@ const AboutBanner = () => {
   return (
     <>
       <section
-        className={`${styles.aboutHeroBannerStyle} 
+      className={`${styles.aboutHeroBannerStyle} 
       }`}
-      >
-        <div className={styles.bannerBody}>
-          <h1 className={styles.heading}>
-            We Build. We Innovate.
-            <br />
-            <span className={styles.subHeading}>We Deliver.</span>
-          </h1>
-          <div className={styles.landingBannerStyle}>
-            <ImageCustom
-              src="/about-us-banner.svg"
-              width={1440}
-              height={650}
-              alt="bannerImg"
-            />
-            <div className={styles.overlay}></div>
-          </div>
+    >
+      <div className={styles.bannerBody}>
+        <div className={styles.bannerData}>
+          <h1 className={styles.heading}>We Build. We Innovate.<br/><span>We Deliver.</span></h1>
+
         </div>
-      </section>
+
+        <div className={styles.landingBannerStyle}>
+          <ImageCustom
+            src="/about-us-banner.svg"
+            width={1440}
+            height={650}
+            alt="bannerImg"
+          />
+          <div className={styles.overlay}></div>
+        </div>
+      </div>
+    </section>
 
       <div className={styles.aboutBannerContent}>
         <div className={styles.contentSection}>

@@ -1,6 +1,6 @@
 @import "../../../styles/partials/config";
 
-.whatWeDo {
+.solutionWeProvide {
   padding: 8.75rem 7.5rem;
   background-color: color(dark-bg);
 
@@ -17,7 +17,7 @@
     }
   }
 
-  .weDoTitle {
+  .solutionTitle {
     color: color(primary-white);
     text-transform: uppercase;
     opacity: 0.8;
@@ -32,10 +32,10 @@
       font-weight: 400;
     }
   }
-  .weDoHeading {
+  .solutionHeading {
     font-size: text(larger);
     margin-bottom: 2.75rem;
-    color: color(primary-white);
+    color: color(info-brown);
 
     @include mobile-tablet-p {
       font-size: 2rem;
@@ -43,7 +43,7 @@
       margin-bottom: 0;
     }
   }
-  .workCardWrapper {
+  .solutionCardWrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2.5rem;
@@ -61,21 +61,19 @@
     }
   }
 
-  .workCardMain {
+  .solutionCardMain {
     height: 19.25rem;
 
     @include mobile-tablet-p {
       max-width: 90%;
     }
 
-    .workCard {
+    .solutionCard {
       transition: transform 1s;
       transform-style: preserve-3d;
       color: color(primary-white);
 
-      
-
-      .workCols {
+      .solutionCols {
         min-width: 16.875rem;
         height: 19.25rem;
         background-color: color(text-primary);
@@ -99,11 +97,9 @@
         position: absolute;
         width: 100%;
         backface-visibility: hidden;
-        
       }
 
       .backCard {
-      
         transform: rotateY(180deg);
         h6 {
           margin-top: 0;
@@ -116,7 +112,7 @@
         }
       }
 
-      .workCardIcon {
+      .solutionCardIcon {
         transition: all 0.5s;
       }
 
@@ -150,13 +146,13 @@
     }
 
     &:hover {
-      .workCard {
+      .solutionCard {
         transform: rotateY(180deg);
         transition: transform 0.5s;
       }
 
-      .workCols {
-        border: 0.14rem solid color(heading-liner);
+      .solutionCols {
+        border: 0.14rem solid color(info-brown);
       }
     }
   }
