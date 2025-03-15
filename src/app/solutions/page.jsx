@@ -8,7 +8,7 @@ const Solutions = () => {
 
   return (
     <>
-      <CustomLoader />
+      {/* <CustomLoader /> */}
       <SolutionsBanner />
       <SolutionWhatWeDo />
       <ContactUsForm />

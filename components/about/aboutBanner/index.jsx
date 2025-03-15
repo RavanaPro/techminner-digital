@@ -31,7 +31,7 @@ const AboutBanner = () => {
         <div className={styles.contentSection}>
           <h1 className={styles.title}>
             About
-            <span> Us</span>
+            <span> US</span>
           </h1>
 
           <p className={styles.leadText}>

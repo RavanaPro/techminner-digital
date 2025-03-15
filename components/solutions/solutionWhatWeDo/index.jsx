@@ -57,8 +57,8 @@ const SolutionWhatWeDo = () => {
                   <div className={`${styles.frontCard} ${styles.solutionCols}`}>
                     <ImageCustom
                       src={data.imgSrc}
-                      width={70}
-                      height={70}
+                      width={75}
+                      height={75}
                       alt="slider-img"
                     />
                     <h6>{data.title}</h6>
@@ -83,8 +83,8 @@ const SolutionWhatWeDo = () => {
                   <div className={`${styles.frontCard} ${styles.solutionCols}`}>
                     <ImageCustom
                       src={data.imgSrc}
-                      width={20}
-                      height={20}
+                      width={75}
+                      height={75}
                       alt="slider-img"
                     />
                     <h6>{data.title}</h6>
